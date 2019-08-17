@@ -25,4 +25,9 @@ print(ww['temp'])
 fc=owm.three_hours_forecast(siti)#на 5 дней
 # fc=owm.daily_forecast(siti,limit=6)#на 14 дней
 f = fc.get_forecast()
-print(f.get_weathers())
+dat=f.get_weathers()
+print('\n',str(dat[0]).split(' ')[3].split('=')[-1],'\n',str(dat[0]).split(' ')[4])
+# for i in range(0,len(f.get_weathers())):
+# 	print(f.get_weathers()[i])
+
+
