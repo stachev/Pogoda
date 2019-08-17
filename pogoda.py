@@ -25,5 +25,4 @@ print(ww['temp'])
 fc=owm.three_hours_forecast(siti)#на 5 дней
 # fc=owm.daily_forecast(siti,limit=6)#на 14 дней
 f = fc.get_forecast()
-# print(f.get_weathers())
-#git branch work
+print(f.get_weathers())
